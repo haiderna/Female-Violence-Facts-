@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FemFacts" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cZQ-gV-t1n">
+                                <rect key="frame" x="45" y="477" width="510" height="38"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="QjP-BA-rLg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="tintColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Show Another Fact"/>
+                                <connections>
+                                    <action selector="newFact" destination="BYZ-38-t0r" eventType="touchUpInside" id="WN6-Jh-4ST"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ew7-Tc-UOX">
+                                <rect key="frame" x="40" y="225" width="520" height="151"/>
+                                <string key="text">Females ages 16-19 are 4 times more likely than the general population to be victims of rape, attempted rape, or sexual assault."Females ages 16-19 are 4 times more likely than the general population to be victims of rape, attempted rape, or sexual assault.3"
+
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Facts From the US and Around the World" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YkW-zd-Tz6">
+                                <rect key="frame" x="40" y="85" width="308" height="20"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uAD-2x-mbM">
+                                <rect key="frame" x="45" y="416" width="510" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Sources "/>
+                                <connections>
+                                    <action selector="Source" destination="BYZ-38-t0r" eventType="touchUpInside" id="r3z-bC-2lf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ew7-Tc-UOX" secondAttribute="trailing" constant="20" id="2Qg-CJ-2dR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cZQ-gV-t1n" secondAttribute="trailing" constant="25" id="5DM-DG-nqX"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cZQ-gV-t1n" secondAttribute="bottom" constant="80" id="6Mx-9h-3bz"/>
+                            <constraint firstItem="uAD-2x-mbM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="25" id="7zo-2A-EB7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="uAD-2x-mbM" secondAttribute="trailing" constant="25" id="BcJ-Xe-SeM"/>
+                            <constraint firstItem="uAD-2x-mbM" firstAttribute="top" secondItem="Ew7-Tc-UOX" secondAttribute="bottom" constant="45" id="CYr-WU-9nc"/>
+                            <constraint firstItem="uAD-2x-mbM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="100" id="M57-lE-Cc9"/>
+                            <constraint firstItem="Ew7-Tc-UOX" firstAttribute="top" secondItem="YkW-zd-Tz6" secondAttribute="bottom" constant="120" id="MvU-lN-fwJ"/>
+                            <constraint firstItem="cZQ-gV-t1n" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="25" id="OKv-By-JAy"/>
+                            <constraint firstItem="Ew7-Tc-UOX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="Oiz-jo-2eQ"/>
+                            <constraint firstItem="Ew7-Tc-UOX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="RRf-bv-Bck"/>
+                            <constraint firstItem="YkW-zd-Tz6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="65" id="YDj-AG-zLc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="uAD-2x-mbM" secondAttribute="trailing" constant="250" id="gnn-bL-lwJ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cZQ-gV-t1n" secondAttribute="bottom" constant="89" id="kyi-Hi-XPQ"/>
+                            <constraint firstItem="YkW-zd-Tz6" firstAttribute="leading" secondItem="Ew7-Tc-UOX" secondAttribute="leading" id="ldT-vp-Qf1"/>
+                            <constraint firstItem="cZQ-gV-t1n" firstAttribute="top" secondItem="uAD-2x-mbM" secondAttribute="bottom" constant="26" id="lkS-Kk-f7i"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ew7-Tc-UOX" secondAttribute="trailing" constant="20" id="mDl-wJ-5lY"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cZQ-gV-t1n" secondAttribute="bottom" constant="85" id="nfE-gu-Fn5"/>
+                            <constraint firstItem="Ew7-Tc-UOX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="17" id="qzo-sN-XwS"/>
+                            <constraint firstItem="uAD-2x-mbM" firstAttribute="top" secondItem="Ew7-Tc-UOX" secondAttribute="bottom" constant="40" id="uEK-OB-3Ix"/>
+                            <constraint firstItem="cZQ-gV-t1n" firstAttribute="top" secondItem="uAD-2x-mbM" secondAttribute="bottom" constant="31" id="xJu-jt-GkL"/>
+                            <constraint firstItem="Ew7-Tc-UOX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xi1-O5-Q1r"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="MvU-lN-fwJ"/>
+                                <exclude reference="qzo-sN-XwS"/>
+                                <exclude reference="CYr-WU-9nc"/>
+                                <exclude reference="M57-lE-Cc9"/>
+                                <exclude reference="gnn-bL-lwJ"/>
+                                <exclude reference="uEK-OB-3Ix"/>
+                                <exclude reference="lkS-Kk-f7i"/>
+                                <exclude reference="6Mx-9h-3bz"/>
+                                <exclude reference="kyi-Hi-XPQ"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="factlabels" destination="Ew7-Tc-UOX" id="dhK-ZD-uao"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="484" y="72"/>
+        </scene>
+    </scenes>
+</document>
